@@ -10,6 +10,7 @@ import com.lushang.restful_strong.model.User;
 
 // @Service("userService")
 // @Transactional
+// 這支範例程式使用了 @Service 跟 @Transactional，但我還不了解，先不用
 public class UserServiceImpl implements UserService{
 
 	private static final AtomicLong counter = new AtomicLong();
@@ -67,9 +68,11 @@ public class UserServiceImpl implements UserService{
 	}
 	
 	private static List<User> populateDummyUsers() {
-		// 這樣物件才真的被新增出來，才有 isEmpty() 的能力
+		// 每個物件都要經過 new 這道手續，才會真正的存在，才能真正 call 該物件的 method
+		// 後面會用到 user.isEmpty()
 		List<User> users = new ArrayList<User>();
 		
+		// 因為這支範例程式沒連資料庫，所以寫了 hard-coded 的資料
         users.add(new User(counter.incrementAndGet(), "Sam", 30, 70000));
         users.add(new User(counter.incrementAndGet(), "Tom", 40, 50000));
         users.add(new User(counter.incrementAndGet(), "Jerome", 45, 30000));
