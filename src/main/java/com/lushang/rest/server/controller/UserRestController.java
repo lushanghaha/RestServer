@@ -1,4 +1,4 @@
-package com.lushang.restful_strong.controller;
+package com.lushang.rest.server.controller;
 
 import java.util.List;
 
@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.lushang.restful_strong.model.User;
-import com.lushang.restful_strong.service.UserService;
-import com.lushang.restful_strong.service.UserServiceImpl;
+import com.lushang.rest.server.model.User;
+import com.lushang.rest.server.service.UserService;
+import com.lushang.rest.server.service.UserServiceImpl;
 
 @RestController
 public class UserRestController {
@@ -29,7 +29,7 @@ public class UserRestController {
 	}
 
 	// 取得所有 user
-	@RequestMapping(value = "/users", method = RequestMethod.GET)
+	@RequestMapping(value = "/users", method = RequestMethod.GET, headers = "Accept=application/json")
 	// 決定 ResponseEntity 裡面是放什麼檔案類型，在此是放一個 User 的 List
 	public ResponseEntity<List<User>> listAllUsers () {
 		List<User> users = userService.findAllUsers();
@@ -39,4 +39,5 @@ public class UserRestController {
 		}
 		return new ResponseEntity<List<User>>(users, HttpStatus.OK);
 	}
+
 }

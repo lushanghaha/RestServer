@@ -1,8 +1,8 @@
-package com.lushang.restful_strong.service;
+package com.lushang.rest.server.service;
 
 import java.util.List;
 
-import com.lushang.restful_strong.model.User;
+import com.lushang.rest.server.model.User;
 
 public interface UserService {
 	

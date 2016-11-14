@@ -1,4 +1,4 @@
-package com.lushang.restful_strong.model;
+package com.lushang.rest.server.model;
 
 public class User {
 	
