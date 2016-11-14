@@ -2,11 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-		http://maven.apache.org/maven-v4_0_0.xsd">
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>com.lushang</groupId>
-	<artifactId>restful-new</artifactId>
+	<artifactId>rest-server</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>restful-new Maven Webapp</name>
@@ -41,7 +41,7 @@
 	</dependencies>
 	
 	<build>
-		<finalName>restful-new</finalName>
+		<finalName>rest-server</finalName>
 		<plugins>
 		    <!-- M2eclipse plugin 看 pom.xml 決定用什麼 JDK，所以得強行設定 JDK 版本 -->
 		    <plugin>

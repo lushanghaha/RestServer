@@ -1,4 +1,4 @@
-package com.lushang.restful_strong.controller;
+package com.lushang.rest.server.controller;
 
 import java.util.List;
 
@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.lushang.restful_strong.model.User;
-import com.lushang.restful_strong.service.UserService;
-import com.lushang.restful_strong.service.UserServiceImpl;
+import com.lushang.rest.server.model.User;
+import com.lushang.rest.server.service.UserService;
+import com.lushang.rest.server.service.UserServiceImpl;
 
 @RestController
 public class UserRestController {

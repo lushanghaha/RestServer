@@ -1,12 +1,10 @@
-package com.lushang.restful_strong.service;
+package com.lushang.rest.server.service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
-// import org.springframework.stereotype.Service;
-
-import com.lushang.restful_strong.model.User;
+import com.lushang.rest.server.model.User;
 
 // @Service("userService")
 // @Transactional
