@@ -13,4 +13,4 @@
 	<mvc:annotation-driven/>
 	<context:component-scan base-package="com.lushang.rest.server.controller" />
 
-</beans> 
+</beans>
