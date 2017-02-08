@@ -3,3 +3,9 @@
 .project
 .settings/
 target/
+
+# Intellij project files
+*.iml
+*.ipr
+*.iws
+.idea/
